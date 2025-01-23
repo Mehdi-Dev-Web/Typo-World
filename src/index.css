@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #0d0d0d;
+}
+*{
+    box-sizing: border-box;
+   
+}
+#title,
+.title{
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-style: normal;
+}
