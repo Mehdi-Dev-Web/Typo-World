@@ -43,12 +43,27 @@
                             ...state,
                             number : action.payload,
                         }
+                        case "show" : 
+                        return{
+                            ...state,
+                            pop: action.payload,
+                        }
+                        case "remove" : 
+                        return{
+                            ...state,
+                            pop: action.payload,
+                        }
 
                         default:
                           return  state
                     }
                 }
-                const initial = {number : 0};
+                const initial = 
+                {
+                    number : 0,
+                    pop: false,
+                        
+                };
                 export const ContextProvider = createContext()
                 export const AppProvider = (props)=>{
 
@@ -57,6 +72,7 @@
                     <ContextProvider.Provider 
                     value={{
                         num : state.number,
+                        pop : state.pop,
                         dispatch
                     }}>
                          {props.children}

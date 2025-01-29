@@ -1,7 +1,7 @@
 import { useAnimate } from 'motion/react';
 import { useEffect } from 'react';
 import n from "../bgimages/letter n N.png"
-import inside from "../bgimages/inside N.png"
+import inside from "../bgimages/inside nn.png"
 
 function N() {
     const [ scope , animate] = useAnimate()

@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { AppProvider,  } from './contaxt/contaxt.jsx'
+import { AppProvider,  } from './context/contaxt.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

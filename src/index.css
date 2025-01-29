@@ -7,7 +7,7 @@ body{
 }
 *{
     box-sizing: border-box;
-   
+  
 }
 #title,
 .title{
@@ -15,3 +15,4 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+
