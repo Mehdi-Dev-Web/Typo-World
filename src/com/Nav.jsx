@@ -21,7 +21,7 @@ const Nav = () => {
     <motion.div 
             animate={{opacity:[0,1]}} 
             transition={{duration:1,delay:.7, ease:"easeInOut"}} 
-            className='flex w-[84%] m-auto bg-transparent h-12 pt-6 justify-between items-center text-white gap-2'> 
+            className='flex w-[84%] m-auto bg-transparent h-14 pt-6 justify-between items-center text-white gap-2'> 
 
       <div className="">
          <Link to="/" 
