@@ -82,32 +82,32 @@ const closeit = ()=>{
        }
 
 {/*  left and top side */}
-     <div className="w-full h-full flex justify-center items-center relative overflow-hidden " >
+     <div className="w-full md:h-full h-[75%] flex justify-center items-center relative overflow-hidden " >
         <div 
-          id="letter" >
+          id="letter"  >
             {info[count].show} {/* letter with animation */}
         </div>
      </div>
 
  {/*right and bottom side */}
-    <div className="w-[80%] h-[44%] m-auto flex flex-col justify-center  bg-[#0d0d0d]  md:w-full ">
+    <div className="w-[85%] h-[50%] m-auto flex flex-col justify-center  bg-[#0d0d0d]  md:w-full ">
         {/* btn menu */}
           <motion.div  
             initial={{opacity:0}} 
             whileTap={{scale:1.3}} 
             animate={{opacity:1 ,y:[10,0]}} 
             whileHover={{scale:1.2}} onClick={backward} 
-            className="hidden md:flex items-center cursor-pointer w-[100px] h-fit mb-1    ">
+            className="hidden md:flex items-center cursor-pointer w-[100px] h-fit mb-4    ">
           <IoMdHome className="text-second " />
           <p className="text-gray-400 ml-1 ">MENU</p>
 
         {/* definitions and explaining*/}
           </motion.div>
             <div  className="w-full text-center md:text-start ">
-             <h1 className="text-[4.22rem]  mb-[-6px]   text-first "id="title">
+             <h1 className="text-3xl  mb-[10px] md:text-6xl   text-first "id="title">
                {info[count].title} 
              </h1>
-             <p  className="text-white  w-full   md:w-[82%] tracking-wide leading-relaxed" id="desc"> 
+             <p  className="text-white  text-center text-sm md:text-start md:text-base   md:w-[82%] tracking-wide leading-relaxed" id="desc"> 
                 {info[count].des}
              </p>
             </div>

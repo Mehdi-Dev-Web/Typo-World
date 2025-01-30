@@ -33,7 +33,7 @@ const Data = [
   {
     show: <Letter />,
     title: "SERIF",
-    des: "A Stroke attached to or extending from the open ends of a letterform is known as the Serif. Serif also refers to the general category of typefaces that have been designed with this feature. Typefaces without a serif are known as Sans-Serif typefaces. “Serif” comes from the Dutch word 'schreef' meaning 'line'.",
+    des: "A Serif is a stroke at the open ends of a letterform. Typefaces with these are Serif, while those without are Sans-Serif. The term comes from the Dutch word 'schreef,' meaning 'line.'",
   },
   {
     show: <Hletter />,
@@ -42,7 +42,7 @@ const Data = [
       <>
         The Bar of a letterform is the horizontal stroke that goes across the
         middle of an uppercase A or H and the stroke that goes under the{" "}
-        <span className="text-[#8c4d83]">Eye</span> of a lowercase `e`. The bar
+        <span className="text-second">Eye</span> of a lowercase `e`. The bar
         can also be known as a crossbar.
       </>
     ),
@@ -160,11 +160,8 @@ const Data = [
     title: "DESCENDER",
     des: (
       <>
-        Descenders are the opposite of Ascenders. Ascenders go above the
-        X-Height while Descenders go below the Baseline. Lowercase letters such
-        as `g`, `j`, `p`, `q` and `y` all have descenders. Normally uppercase
-        letters don't go below the Baseline, however you may find some typefaces
-        that do.
+       
+Descenders extend below the Baseline, unlike Ascenders, which rise above the X-Height. Letters like g, j, p, q, and y have descenders, while most uppercase letters do not.
       </>
     ),
   },
@@ -215,13 +212,7 @@ const Data = [
     title: "STROKE",
     des: (
       <>
-        A Stroke is similar to a Stem, the only different is that a stroke is
-        known as the main diagonal part of a letterform such as in ‘N’, ‘M’ and
-        ‘Y’. Some letterforms with two diagonals, such as ‘A’ or ‘V’, have both
-        a stem and a stroke. The near-vertical Stroke is known as the stem in
-        this instance and the other diagonal line is known as the main Stroke.
-        Other letter parts such as Bars, Arms, and Bowls are collectively
-        referred to as the Strokes that make up a letterform.
+     A Stroke is a diagonal part of a letterform, as in ‘N’, ‘M’, and ‘Y’. In letters like ‘A’ or ‘V’, the near-vertical line is the stem, and the other diagonal is the stroke. Bars, Arms, and Bowls are also types of strokes.
       </>
     ),
   },
@@ -230,8 +221,8 @@ const Data = [
     title: "TRACKING",
     des: (
       <>
-        Tracking, otherwise known as letter-spacing, is similar to{" "}
-        <span className="text-second">Kerning</span> but affects the spacing
+        Tracking, otherwise known as letter-spacing, is similar to
+        Kerning but affects the spacing
         between characters in a complete section of text instead of between only
         two consecutive characters.
       </>

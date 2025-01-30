@@ -14,23 +14,24 @@ import MainHome from "./com/MainHome"
 function App() {
 
   return (
-    <>
+    
   
 
 <Router> 
       <Nav />
       <Routes>
+        <Route path="/" element={<MainHome />} /> 
         <Route path="/homy" element={ <Home />  }></Route>
-        <Route path="/" element={ <MainHome />  }></Route>
         <Route path="/about" element={  <About /> }></Route>
         <Route path="/post" element={  <Post /> }></Route>
+        <Route path="*" element={<MainHome />} />
         {/* <Route path="/login" element={<Login s/>}></Route>   */}
       </Routes>
    </Router>
 
  
      
-    </>
+   
   )
 }
 

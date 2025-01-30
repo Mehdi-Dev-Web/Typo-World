@@ -52,7 +52,7 @@ function MainHome() {
       style={{
         backgroundImage,
       }}
-       className="w-full h-[88.5vh] bg-[#0d0d0d] flex justify-center relative items-center overflow-hidden flex-col pb-14  ">
+       className="w-full h-[90.5vh] bg-[#0d0d0d] flex justify-center relative items-center overflow-hidden flex-col pb-14  ">
 {/* pop up */}
        {pop  &&
             <div className="w-full h-full  absolute z-50 flex justify-center items-center ">
@@ -76,15 +76,15 @@ function MainHome() {
               <motion.h1 
                  animate={{y:[10,0],opacity:[0,1]}} 
                  transition={{duration:.8,ease:"easeInOut"}} 
-                 className=" text-4xl md:text-6xl font-bold text-white text-center mb-5 ">
+                 className=" text-3xl md:text-6xl font-bold text-white text-center mb-5 ">
                    The Art and Science <br /> of Typography
                </motion.h1>
 
                <motion.p 
                  animate={{y:[10,0],opacity:[0,1]}} 
                  transition={{duration:.8,ease:"easeInOut", delay:.1}} 
-                 className="text-center w-[80%]    text-gray-300 ">
-                     Explore key font terms like kerning, tracking, and leading-each playing a vital role in shaping <br /> how text is displayed and perceived.
+                 className="text-center w-[85%] md:text-base text-sm md:w-[40%] mx-auto    text-gray-300 ">
+                     Explore key font terms like kerning, tracking, and leading-each playing a vital role in shaping how text is displayed and perceived.
                 </motion.p>
 
              {/* call the action */}
